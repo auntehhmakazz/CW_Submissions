@@ -24,7 +24,27 @@ public class Homework1_Practicing_System_and_Primitives {
 		System.out.print(cir*pi);
 		System.out.print("and area of a circle that has a radious of ");
 		System.out.print(are*pi);
-			
+
+
+RETRY 9/4;
+public class Retry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double r = 4.0;
+		final double pi = 3.14159;
+		double c = pi*2*r;
+		double a = pi*r*r;
+		System.out.print("the circumference of the circle is ");	
+		System.out.println(c);
+		System.out.print("the area of the circle is ");
+		System.out.print(a);
+	}
+
+		
+}
+
 	}
 
 
