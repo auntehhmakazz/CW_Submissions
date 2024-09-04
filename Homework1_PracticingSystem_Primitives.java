@@ -1,3 +1,6 @@
+/*
+*This is my homework and this is about Practicing System and Primitives.
+*/
 public class Homework1_Practicing_System_and_Primitives {
 
 	public static void main(String[] args) {
