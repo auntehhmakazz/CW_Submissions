@@ -15,4 +15,13 @@ public String makeTags(String tag, String word){
   
   return "<"+tag+">"+word+"</"+tag+">";
 
+//this si practice 4 - firstHalf
+  public String firstHalf(String str) {
+  
+  int lengthOfString = str.length();
+  int halfOfString = lengthOfString/2;
+  return str.substring(0, halfOfString);
+  
+}
+
 }
