@@ -4,42 +4,43 @@
 public class Pyramid {
 
 //Data Attributes
-  private double length;
-  private double width;
-  private double height;
-  private double volume;
+		private double length;
+		private double width;
+		private double height;
+		private double volume;
 
 //Constructors
 
-  public Pyramid(double l, double w, double h, double v)
-    {
-	    length = l;
-	    width = w;
-    	height = h;
-    	volume = v;
-    }
+		public Pyramid(double l, double w, double h, double v)
+		{
+			length = l;
+			width = w;
+			height = h;
+			volume = v;
+		}
 
 
 //functionality
 
-  /**
-   * this method will return the volume of the pyramid
-   * @return the volume
-   */
-    public double getVolume()
-      {
-      	return length*width*height/3;
-      }
-
-  /**
-   * this method will return the length of the pyramid
-   * @return the length
-   */
-    public double getLength()
-      {
-	      return volume/(height*width)/3;
-      }
-
-
-
-}
+		/**
+		 * this method will return the volume of the pyramid
+		 * @return the volume
+		 */	
+		public double getVolume()
+		{
+			return length*width*height/3;
+		}
+		
+		
+		/**
+		 * this method will return the length of the pyramid
+		 * @return the length
+		 */
+		public double getLength()
+		{
+			return volume/(height*width)/3;
+		}
+	
+	
+	
+	}
