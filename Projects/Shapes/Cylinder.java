@@ -3,44 +3,45 @@
  */
 public class Cylinder1 {
 
-public void setRadius(double radius) 
-    {
+/*public void setRadius(double radius) {
 		this.radius = radius;
-  	}
+	}
 
-public void setHeight(double height) 
-    {
+	public void setHeight(double height) {
 		this.height = height;
-  	}
-	//data attributes
-  	private final double pi = 3.14;
-  	private double radius;
-  	private double height;
+	}
+	*/
+	 
+	
+//Data Attributes
+		private final double pi = 3.14;
+		private double radius;
+		private double height;
 
 //constructors
-  	public Cylinder1(double r, double h)
-  	{
-  		radius = r;
-  		height = h;
-  	}
-	
-//functionality
-  /**
-   * This method will return the volume of the cylinder
-   * @return the volume
-   */
-  	public double getVolume()
-  	{
-  		return pi*radius*radius*height;
-  	}
-  /**
-   * this method will return out the area of the cylinder
-   * @return the area 
-   */
-  	public double getArea()
-  	{
-  		return 2*pi*radius*(radius*height);
-	  }
-	
+		public Cylinder1(double r, double h)
+		{
+			radius = r;
+			height = h;
+		}
+		
+		//functionality
+		/**
+		 * This method will return the volume of the cylinder
+		 * @return the volume
+		 */
+		public double getVolume()
+		{
+			return pi*radius*radius*height;
+		}
+		/**
+		 * this method will return out the area of the cylinder
+		 * @return the area 
+		 */
+		public double getArea()
+		{
+			return 2*pi*radius*(radius*height);
+		}
+		
 }
 
