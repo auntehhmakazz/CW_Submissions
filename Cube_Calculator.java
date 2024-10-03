@@ -2,7 +2,6 @@
  * this class is about finding the side length, surface area and the volume of a cube
  */
 public class Intro_Cube {
-
 public static void main(String[] args) {
 // TODO Auto-generated method stub
 
