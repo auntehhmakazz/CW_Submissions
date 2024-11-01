@@ -11,13 +11,16 @@ public class LogicQuiz_Corrections {
 		System.out.print(findIfIsLeapYear(300));
 		
 	}
-	
+
+	// this is the method
 	public static boolean findIfIsLeapYear(int year)
 	{
+		// if the year is divisble by 400 it will return true 
 		if ( year % 400 ==0)
 		{
 			return true;
 		}
+		// if it isn't divisible by 400 or 100 it will return false
 		else if (year % 400 != 0 || year % 100 == 0)
 		{
 			return false;
