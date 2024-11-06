@@ -4,15 +4,15 @@
 import java.util.Scanner;
 
 public class WordleGame {
-static Scanner myReader = new Scanner(System.in);
 
+static Scanner myReader = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		// I declared my word as Saint
 		String solution = new String ("saint");
-		
+
 
 		//this will call welcomeToGame method
 		welcomeToGame();
@@ -20,7 +20,7 @@ static Scanner myReader = new Scanner(System.in);
 		//this will also help my code after 
 		String playerGuess = possibleErrors();
 		//this will call my guesssWord. In my guess word parameters I input playerGuess
-		guesssWord(playerGuess);
+		guesssWord(playerGuess,solution);
 		//this will call my endGame. Which will finish the game. 
 		//In my parameters I called both playerGuess and solution. 
 		endGame(playerGuess,solution);
@@ -92,85 +92,83 @@ static Scanner myReader = new Scanner(System.in);
 	 */
 	public static String guesssWord(String playerGuess)
 	{
-	
+	//this is my first letter guess
 		
-		//this is my first letter guess
-		
-		if (playerGuess.indexOf('s') == 0 )
+		if (playerGuess.charAt(0) == solution.charAt(0) )
 		{
-			System.out.print("s");
+			System.out.print(solution.charAt(0));
 		}
 		
 		
-		else if (playerGuess.indexOf('s') == 1 || playerGuess.indexOf('s') == 2 || playerGuess.indexOf('s') == 3 || playerGuess.indexOf('s') == 4)
+		else if (playerGuess.charAt(0) == solution.charAt(1) || playerGuess.charAt(0) == solution.charAt(2) || playerGuess.charAt(0) == solution.charAt(3) || playerGuess.charAt(0) == solution.charAt(4))
 		{
 			System.out.print("?");
 		}
 	
-		else if (playerGuess.indexOf('s') == -1)
+		else 
 		{
 			System.out.print("X");
 		}
 		
 		// second letter of correct word
-		if (playerGuess.indexOf('a') == 1)
+		if (playerGuess.charAt(1) == solution.charAt(1))
 		{
-			System.out.print("a");
+			System.out.print(solution.charAt(1));
 		}
 		
-		else if (playerGuess.indexOf('a') == 0 || playerGuess.indexOf('a') == 2 || playerGuess.indexOf('a') == 3 || playerGuess.indexOf('a') == 4)
+		else if (playerGuess.charAt(1) == solution.charAt(0) || playerGuess.charAt(1) == solution.charAt(2) || playerGuess.charAt(1) == solution.charAt(3) || playerGuess.charAt(1) == solution.charAt(4))
 		{
 			System.out.print("?");
 		}
 	
-		else if (playerGuess.indexOf('a') == -1)
+		else 
 		{
 			System.out.print("X");
 		}
 		
 		//third letter of correct word
-		if (playerGuess.indexOf('i') == 2)
+		if (playerGuess.charAt(2) == solution.charAt(2))
 		{
-			System.out.print("i");
+			System.out.print(solution.charAt(2));
 		}
 		
-		else if (playerGuess.indexOf('i') == 0 || playerGuess.indexOf('i') == 1 || playerGuess.indexOf('i') == 3 || playerGuess.indexOf('i') == 4)
+		else if (playerGuess.charAt(2) == solution.charAt(0) || playerGuess.charAt(2) == solution.charAt(1) || playerGuess.charAt(2) == solution.charAt(3) || playerGuess.charAt(2) == solution.charAt(4))
 		{
 			System.out.print("?");
 		}
 		
-		else if (playerGuess.indexOf('i') == -1)
+		else 
 		{
 			System.out.print("X");
 		}
 		
 		// this is my fourth letter
-		if (playerGuess.indexOf('n') == 3)
+		if (playerGuess.charAt(3) == solution.charAt(3))
 		{
 			System.out.print("n");
 		}
 		
-		else if (playerGuess.indexOf('n') == 0 || playerGuess.indexOf('n') == 1 || playerGuess.indexOf('n') == 2 || playerGuess.indexOf('n') == 4)
+		else if (playerGuess.charAt(3) == solution.charAt(0) || playerGuess.charAt(3) == solution.charAt(1) || playerGuess.charAt(3) == solution.charAt(2) || playerGuess.charAt(3) == solution.charAt(4))
 		{
 			System.out.print("?");
 		}
 		
-		else if (playerGuess.indexOf('n') == -1)
+		else 
 		{
 			System.out.print("X");
 		}
 		// this is my last letter
-		if (playerGuess.indexOf('t') == 4)
+		if (playerGuess.charAt(4) == solution.charAt(4))
 		{
 			System.out.print("t");
 		}
 		
-		else if (playerGuess.indexOf('t') == 0 || playerGuess.indexOf('t') == 1 || playerGuess.indexOf('t') == 2 || playerGuess.indexOf('t') == 3)
+		else if (playerGuess.charAt(4) == solution.charAt(0) || playerGuess.charAt(4) == solution.charAt(1) || playerGuess.charAt(4) == solution.charAt(2) || playerGuess.charAt(4) == solution.charAt(3))
 		{
 			System.out.print("?");
 		}
 		
-		else if (playerGuess.indexOf('n') == -1)
+		else 
 		{
 			System.out.print("X");
 		}
@@ -178,6 +176,8 @@ static Scanner myReader = new Scanner(System.in);
 		
 		return playerGuess;
 	
+	}
+
 	}
 
 /**
