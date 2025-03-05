@@ -1,4 +1,4 @@
-/**
+**
  * this is my arrays project assignment
  */
 public class arraysProject {
@@ -31,7 +31,7 @@ public class arraysProject {
 	System.out.println(anyNumberShowsThreeTimesInRow(fakeArray));
 	
 	//7
-	//System.out.println(returnManyTimes(fakeArray));
+	System.out.println(returnManyTimes(fakeArray));
 	
 	//8
 	
@@ -242,3 +242,4 @@ public static void sortToSortArr(int[] nums)
 
 
 }
+
